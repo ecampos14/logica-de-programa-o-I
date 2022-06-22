@@ -15,8 +15,8 @@ import java.net.URL;
 public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Hello.fxml"));
-        Scene scene = new Scene((Parent) fxmlLoader.load(), 426, 400);
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Cliente.fxml"));
+        Scene scene = new Scene((Parent) fxmlLoader.load(), 430, 400);
         stage.setTitle("Cadastro de Cliente");
         stage.setScene(scene);
         stage.setResizable(false);

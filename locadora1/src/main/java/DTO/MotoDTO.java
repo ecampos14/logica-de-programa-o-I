@@ -1,18 +1,23 @@
 package DTO;
 
 public class MotoDTO {
-	
-	private String marca;
+	private String placa;
 	private String cor;
 	private String ano;
 	private String preco;
+	private String idCliente;
 	
-	
-	public String getMarca() {
-		return marca;
+	public String getIdCliente() {
+		return idCliente;
 	}
-	public void setMarca(String marca) {
-		this.marca = marca;
+	public void setIdCliente(String idCliente) {
+		this.idCliente = idCliente;
+	}
+	public String getPlaca() {
+		return placa;
+	}
+	public void setPlaca(String placa) {
+		this.placa = placa;
 	}
 	public String getCor() {
 		return cor;
@@ -34,8 +39,8 @@ public class MotoDTO {
 		this.preco = preco;
 	}
 	
-	public MotoDTO(String marca,String cor,String ano, String preco) {
-		this.marca= marca;
+	public MotoDTO() {
+		this.placa=placa;
 		this.cor=cor;
 		this.ano=ano;
 		this.preco=preco;

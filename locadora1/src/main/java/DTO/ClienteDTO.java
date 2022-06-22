@@ -1,13 +1,18 @@
 package DTO;
 
-
-
 public class ClienteDTO {
 	private String nome; 
 	private String cpf;
 	private String email;
 	private String telefone;
+    private String idCliente;
 	
+	public String getIdCliente() {
+		return idCliente;
+	}
+	public void setIdCliente(String idCliente) {
+		this.idCliente = idCliente;
+	}
 	
 	public String getNome() {
 		return nome;
@@ -33,7 +38,7 @@ public class ClienteDTO {
 	public void setTelefone(String telefone) {
 		this.telefone = telefone;
 	}
-	public ClienteDTO (String nome, String cpf, String email, String telefone) {
+	public ClienteDTO () {
 		this.nome = nome;
 		this.cpf = cpf;
 		this.email = email;
